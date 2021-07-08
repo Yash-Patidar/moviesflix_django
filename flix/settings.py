@@ -21,12 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ['SECRET_KEY']
-
+SECRET_KEY = 'django-insecure-01^tgdykq77*#4^m0b7z##)g#%l5c9-rj_8k#)(@$uzc-@^imt'
+# os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["flix16.herokuapp.com","localhost"]
+ALLOWED_HOSTS = ["flix16.herokuapp.com", "localhost"]
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'app.schema.schema' # Where your Graphene schema lives
+    'SCHEMA': 'app.schema.schema'  # Where your Graphene schema lives
 }
 
 MIDDLEWARE = [
